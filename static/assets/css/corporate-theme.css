@@ -1,0 +1,79 @@
+/*
+  Corporate Theme Colors for SmilicsQMC
+  - Amarillo: #fedd00
+  - Gris oscuro: #3d4444
+  - Verde claro: rgb(186, 189, 139)
+  - Blanco: #ffffff
+  Paleta amigable para la vista.
+*/
+/*
+  Corporate Theme Colors for SmilicsQMC
+  - Base: #3d4444 (fondo)
+  - Texto: #ffffff (blanco)
+  - Amarillo: #fedd00 (acentos, botones, gráficos)
+  - Verde claro: rgb(186, 189, 139) (acentos, gráficos)
+*/
+:root {
+  --corporate-yellow: #fedd00;
+  --corporate-dark: #3d4444;
+  --corporate-green: rgb(186, 189, 139);
+  --corporate-white: #ffffff;
+
+  --background-main: var(--corporate-dark);
+  --background-alt: #232626;
+  --text-main: var(--corporate-white);
+  --accent-yellow: var(--corporate-yellow);
+  --accent-green: var(--corporate-green);
+}
+
+body {
+  background-color: var(--background-main);
+  color: var(--text-main);
+}
+
+.navbar, .sidebar, .card-header {
+  background-color: var(--background-main) !important;
+  color: var(--text-main) !important;
+}
+
+.btn-primary, .btn-accent {
+  background-color: var(--accent-yellow) !important;
+  color: var(--corporate-dark) !important;
+  border: none;
+}
+
+.btn-primary:hover, .btn-accent:hover {
+  background-color: var(--accent-green) !important;
+  color: var(--corporate-dark) !important;
+}
+
+.card, .content, .main-panel {
+  background-color: var(--background-alt) !important;
+  color: var(--text-main) !important;
+}
+
+input, textarea, select {
+  background-color: var(--corporate-white) !important;
+  color: var(--corporate-dark) !important;
+  border: 1px solid var(--accent-green) !important;
+}
+
+/* Links */
+a, .nav-link {
+  color: var(--accent-yellow);
+}
+a:hover, .nav-link:hover {
+  color: var(--accent-green);
+}
+
+/* Gráficos, iconos, etc. */
+.chart-bar, .chart-line, .icon-accent-yellow {
+  color: var(--accent-yellow) !important;
+  fill: var(--accent-yellow) !important;
+}
+.chart-green, .icon-accent-green {
+  color: var(--accent-green) !important;
+  fill: var(--accent-green) !important;
+}
+
+/* Puedes añadir más reglas según lo que quieras personalizar */
